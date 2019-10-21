@@ -1,0 +1,55 @@
+<!--Lizbeth Magaña Leon
+WEB DEVELOPMENT PARTIME 
+PREWORK-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mars Rover Iron Hack Prework</title>
+    <!-- starter-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<div class="container">
+    <div class="col-md- col-sm-12 col-xs-12" id="instructions">
+        <h1><strong>MARS ROVER IRON HACK</strong></h1>
+        <p>We are sending a rover to Mars, and we need to be able to move it through a series of instructions sent from the Earth. As the final exercise for this part of the module, you will be leading this project.</p>
+        <p>Enter an array of character commands for each rover, which can include:</p>
+        <ul>
+            <p>These commands will be the first letter of either (f)orward, (r)ight, or (l)eft.
+
+                    To test it, use the string: ‘rffrfflfrff’.</p>
+            <li>f for go forward</li>
+            <li>b for go back</li>
+            <li>r for turn right</li>
+            <li>l for turn left</li>
+        </ul>
+        
+        <div class="input-group controller">
+        <input type="text" class="form-control" placeholder="Rover A Controls" id="roverA_control">
+        <span class="input-group-btn">
+            <button class="btn btn-default" onclick="controltheRover(roverA)" type="button" id="roverA_button">click me!</button>
+        </span>
+        </div>
+        <div class="input-group controller">
+        <input type="text" class="form-control" placeholder="Rover B Controls" id="roverB_control">
+        <span class="input-group-btn">
+            <button class="btn btn-default" onclick="controltheRover(roverB)" type="button" id="roverB_button">click me!</button>
+        </span>
+        </div>
+        <h2>Follow the Rover:</h2>
+        <p>The rovers will be represented as their letter id and the direction (N,E,S,W) they are facing.</p>
+        <p>Obstacles will be represented as a Thunder Lightning symbol.</p>
+        <p>The robots are smart enough to detect the obstacles and other rovers in their path before landing on them. Review the "Rovers' Log" to keep track.</p>
+    </div>
+    <div class="col-md-6 col-sm-12 col-xs-12" id="map">
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12" id="log">
+        <div id="rovers_log">
+            <h2>Location</h2>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Modak&display=swap');
+
+
+@keyframes fade-in{
+    0% {
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+}
+html,body{
+    font-size: 14px;
+    color: black!important;
+    background-image: url("light.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+
+.container{
+    width: 100%;
+    padding: 20px;
+    margin-top: 70px;
+}
+h1{
+    font-family: 'Modak', cursive;
+    text-align: center;
+    font-size: 3.7rem;
+    color: black;
+    border-bottom: solid 1px #fff;
+    padding: 0 0 14px 0;
+    margin: 0 0 20px 0;
+}
+
+h2,p{
+    font-family: "Roboto Slab", serif;
+}
+
+ul{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 2.6rem;
+}
+
+#instructions .input-group{
+    margin: 10px;
+    max-width: 70%;
+}
+
+#log p{
+    font-size: 10%rem;
+}
+
+.cell, .rover, .obstacle {
+    width: 9.090909%!important;
+    height: 25px;
+    border: solid 1px white;
+    text-align: center;
+    padding: 25px 0;
+}
+.cell{
+}
+.rover{
+    background-color: rgb(235, 164, 245);
+    transition: background-color 2.0s ease-in 2.0s;
+}
+.obstacle{
+    background-color: rgb(106, 192, 250);
+    transition: background-color 2s ease-in 2s;
+}
+
+.controller{
+    width: 90%;
+}
+
+.moving{
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+}
+#map{
+    background-color:rgb(204, 143, 255);
+}
+@media screen and (max-width: 750px) { 
+    h1 {
+        font-size: 3.7rem;
+        padding: 20px 0;
+    }
+    p,ul{
+        font-size: 1.5rem;
+    }
+    .rover{
+        font-size: 10px;
+    }
+    #instructions{
+    background-color: rgba(0,0,0, 0.6);
+    }
+    
+    #rovers_log p{
+       font-size: 10px;
+    }
+}
+
+
+}
+
+@media screen and (min-width: 750px) and (max-width: 992px){
+    html, body {
+        font-size: 16px;
+    }
+    #instructions .input-group{
+        margin: 10px;
+        max-width: 50%;
+    }
+    #instructions{
+    background-color: rgba(0,0,0, 0.6);
+    }
+}
